@@ -1,0 +1,6 @@
+framework module HLSegmentViewController {
+  umbrella header "HLSegmentViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

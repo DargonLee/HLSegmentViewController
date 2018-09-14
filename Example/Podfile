@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HLSegmentViewController_Example' do
+  pod 'HLSegmentViewController', :path => '../'
+
+  target 'HLSegmentViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

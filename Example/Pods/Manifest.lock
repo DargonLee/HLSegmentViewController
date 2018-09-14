@@ -1,0 +1,16 @@
+PODS:
+  - HLSegmentViewController (0.1.0)
+
+DEPENDENCIES:
+  - HLSegmentViewController (from `../`)
+
+EXTERNAL SOURCES:
+  HLSegmentViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLSegmentViewController: 68e4fdb0b074a07b10d6ec31a558fd978abf1f39
+
+PODFILE CHECKSUM: 9bbde5f9ad45ed3b36053577c7747c3463495ceb
+
+COCOAPODS: 1.5.3
