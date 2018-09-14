@@ -8,7 +8,11 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-[![Platform](./demo.gif)
+简单易用的SegmentViewController，可以快速实现网易新闻，今日头像类似的主页效果
+- 使用简单
+- 方便易用 
+- 对项目无浸入性
+![Platform](./demo.gif)
 
 ## Requirements
 
@@ -23,7 +27,7 @@ pod 'HLSegmentViewController'
 
 ## Author
 
-2461414445@qq.com, 2461414445@qq.com
+2461414445@qq.com
 
 ## License
 
