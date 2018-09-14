@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
   使用简单 方便易用 对项目无浸入性
                        DESC
 
-  s.homepage         = 'https://github.com/2461414445@qq.com/HLSegmentViewController'
+  s.homepage         = 'https://github.com/DargonLee/HLSegmentViewController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '2461414445@qq.com' => '2461414445@qq.com' }
-  s.source           = { :git => 'https://github.com/2461414445@qq.com/HLSegmentViewController.git', :tag => s.version.to_s }
+  s.author           = { 'DargonLee' => '2461414445@qq.com' }
+  s.source           = { :git => 'https://github.com/DargonLee/HLSegmentViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
