@@ -15,13 +15,28 @@
 #import "ReaderViewController.h"
 #import "ScienceViewController.h"
 
-#import "SegmentViewController.h"
+#import "HLSegmentViewController.h"
 
 @interface HLViewController ()
+
+@property (nonatomic,weak) HLSegmentViewController *segmentVC;
 
 @end
 
 @implementation HLViewController
+
+
+- (HLSegmentViewController *)segmentVC
+{
+    if(!_segmentVC){
+        HLSegmentViewController *vc = [[HLSegmentViewController alloc]init];
+        vc.view.backgroundColor = [UIColor lightGrayColor];
+        [self addChildViewController:vc];
+        self.segmentVC = vc;
+    }
+    return _segmentVC;
+}
+
 
 - (void)viewDidLoad
 {
@@ -29,79 +44,56 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
-    //第一种用法
-    
-    // 当前控制器继承 SegmentViewController 的时候这么写
-    //    [self setupAllChildViewController];
+    self.segmentVC.view.frame = self.view.bounds;
+    [self.view addSubview:self.segmentVC.view];
     
     
-    //第二种用法
+    // 添加几个自控制器
+    // 在contentView, 展示子控制器的视图内容
+    
+    NSArray *items = @[@"专辑", @"声音", @"下载中"];
+    
+    TopLineViewController *vc1 = [[TopLineViewController alloc]init];
+    
+    HotViewController *vc2 = [[HotViewController alloc]init];
+    
+    VideoViewController *vc3 = [[VideoViewController alloc]init];
     
     
-}
-- (IBAction)showSementVC:(id)sender
-{
-    SegmentViewController *vc = [SegmentViewController segmentControllerWithAddChildViewControllerBlock:^(SegmentViewController *segmentVC) {
+    [self.segmentVC setupSegmentItems:items childViewControllers:@[vc1,vc2,vc3]];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
+        NSArray *items = @[@"头条投案天", @"热点新闻", @"视频哈哈哈", @"社会嗯嗯嗯", @"订阅卡卡",@"科技哔哔"];
+        
+        // 添加几个自控制器
+        // 在contentView, 展示子控制器的视图内容
+        
+        // 头条
         TopLineViewController *vc1 = [[TopLineViewController alloc] init];
-        vc1.title = @"头条";
-        [segmentVC addChildViewController:vc1];
-        
+        // 热点
         HotViewController *vc2 = [[HotViewController alloc] init];
-        vc2.title = @"热点";
-        [segmentVC addChildViewController:vc2];
         
         // 视频
         VideoViewController *vc3 = [[VideoViewController alloc] init];
-        vc3.title = @"视频";
-        [segmentVC addChildViewController:vc3];
         // 社会
         ScoietyViewController *vc4 = [[ScoietyViewController alloc] init];
-        vc4.title = @"社会";
-        [segmentVC addChildViewController:vc4];
+
         // 订阅
         ReaderViewController *vc5 = [[ReaderViewController alloc] init];
-        vc5.title = @"订阅";
-        [segmentVC addChildViewController:vc5];
+
         // 科技
         ScienceViewController *vc6 = [[ScienceViewController alloc] init];
-        vc6.title = @"科技";
-        [segmentVC addChildViewController:vc6];
-    }];
+        
+        
+        [self.segmentVC setupSegmentItems:items childViewControllers:@[vc1, vc2, vc3, vc4, vc5,vc6]];
+        
+        [self.segmentVC.segmentView updateWithConfit:^(HLSegmentViewConfig *config) {
+            config.segmentBarColor = [UIColor greenColor];
+        }];
+    });
     
-    [self.navigationController pushViewController:vc animated:YES];
+    
 }
-
-#pragma 添加所有子控制器
-- (void)setupAllChildViewController
-{
-    // 头条
-    TopLineViewController *vc1 = [[TopLineViewController alloc] init];
-    vc1.title = @"头条";
-    [self addChildViewController:vc1];
-    
-    // 热点
-    HotViewController *vc2 = [[HotViewController alloc] init];
-    vc2.title = @"热点";
-    [self addChildViewController:vc2];
-    
-    // 视频
-    VideoViewController *vc3 = [[VideoViewController alloc] init];
-    vc3.title = @"视频";
-    [self addChildViewController:vc3];
-    // 社会
-    ScoietyViewController *vc4 = [[ScoietyViewController alloc] init];
-    vc4.title = @"社会";
-    [self addChildViewController:vc4];
-    // 订阅
-    ReaderViewController *vc5 = [[ReaderViewController alloc] init];
-    vc5.title = @"订阅";
-    [self addChildViewController:vc5];
-    // 科技
-    ScienceViewController *vc6 = [[ScienceViewController alloc] init];
-    vc6.title = @"科技";
-    [self addChildViewController:vc6];
-}
-
 
 @end

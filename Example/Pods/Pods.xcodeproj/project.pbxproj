@@ -8,16 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0649216D690B65B05FDFAB87DBBA1193 /* Pods-HLSegmentViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 571B0C0F2409E16BF21478F2B14E1BC6 /* Pods-HLSegmentViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FD89037D027A88C1DCD51F21AC32B48 /* HLSegmentViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E892BA643A9AD0ADE103C60E17C20C5 /* HLSegmentViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33F185F2DE34307415BFA462D99451FE /* Pods-HLSegmentViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AAB846F39F1C56D511AF239AA0B4A7 /* Pods-HLSegmentViewController_Tests-dummy.m */; };
 		49139B1388DAE3492D14CBE512F62B74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		52FCE18A57624CC7A02FCBE46710202B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		541F53FBA001702E8C6D6DBCFF74B0A7 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899066788A733D981B3A5659250E8203 /* SegmentViewController.m */; };
+		4FD8AF4EE8AA466C467AE3CC8FE2C747 /* HLSegmentViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEBF7F56F51213DB1F13D99BF5839C /* HLSegmentViewConfig.m */; };
+		561F41FE65564043BEB57B405E8F1C2F /* HLSegmentViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F46A102417530BC7C95CCB9D676E211D /* HLSegmentViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		605DE21FCD49CD7C27238DDF5B19EC91 /* HLSegmentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2339BE754811A0BF3AC24C37F2555DC1 /* HLSegmentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62CE8B39F1ABD7628E71CF24F442D1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7370A721C505691317C1B319F8282427 /* HLSegmentViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7568888B17F3C00B449E177F0CC3C30 /* HLSegmentViewController-dummy.m */; };
+		738FCB31C3E271B32A4C210EE20ADF5F /* HLSegmentViewConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB723D31EC2685D09F70E31785CA2E9 /* HLSegmentViewConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D05C105652BE5FB24FC7C597D7CB572 /* HLSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE90ABE0D99DD6F920E8955CE8F5E7E /* HLSegmentView.m */; };
 		94BFE9CB301FD24E96FA69EE1C3E9BAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		991D8B654AAEA5F923A09B4BD15E422E /* SegmentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6F4BAEFF76CA6B5463C625F28DD212 /* SegmentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A885063E9DFFE89C25438A337596C342 /* Pods-HLSegmentViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDAAFDC8DB5101466F04537D8DEA07CF /* Pods-HLSegmentViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB16E12C21AC3D908CC290FF73F739C0 /* Pods-HLSegmentViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF59BB0170F5E360F46CB027D241CF4B /* Pods-HLSegmentViewController_Example-dummy.m */; };
-		EEA69FED24D43E0B1C4C539A8721BBB8 /* HLSegmentViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CD56F943B8CD85B79C1C73DA44762 /* HLSegmentViewController-dummy.m */; };
+		C35ACFD64A42471984A60A4DDB0989A0 /* HLSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25337A86AD641FED9BAA892DF49FBE20 /* HLSegmentViewController.m */; };
+		E6BD15E11DC7F5FC43533E2D5E740E33 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26A66269A412998AC947F0C6D543A0 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F3054B3A1F0CB35F6C6D408DFED26A /* HLSegmentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0006B2A4DB57F3E02062823F33D99A /* HLSegmentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F39F022187232E6D5D62B66FD160C1B1 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8577696F019A139F5C901ACEBD48F /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +31,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9C283702F41AB7341CC256572FFBF0A8;
+			remoteGlobalIDString = F5062FAC5EAD78E0C0591256AE1CFA5F;
 			remoteInfo = HLSegmentViewController;
 		};
 		BB146144DC63EF279C1B902F7635650B /* PBXContainerItemProxy */ = {
@@ -38,40 +44,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		055CD56F943B8CD85B79C1C73DA44762 /* HLSegmentViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HLSegmentViewController-dummy.m"; sourceTree = "<group>"; };
 		089F1DAC5CFACF45787AD89863FF385D /* Pods-HLSegmentViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLSegmentViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0A1EAF81B9E8901A7DBDB70A6A772124 /* HLSegmentViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HLSegmentViewController.modulemap; sourceTree = "<group>"; };
 		0E6882430D075D4E1859190A1BF08C2A /* Pods-HLSegmentViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HLSegmentViewController_Example.modulemap"; sourceTree = "<group>"; };
-		261FBB86D10827E2724220CEEF5934B2 /* HLSegmentViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HLSegmentViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2A390B2BC9FD241D55928A1522A7629F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		128C129794EBA078576F14D09BA431C4 /* HLSegmentViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLSegmentViewController-prefix.pch"; sourceTree = "<group>"; };
+		2339BE754811A0BF3AC24C37F2555DC1 /* HLSegmentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HLSegmentViewController.h; path = HLSegmentViewController/Classes/SegmentViewController/HLSegmentViewController.h; sourceTree = "<group>"; };
+		25337A86AD641FED9BAA892DF49FBE20 /* HLSegmentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HLSegmentViewController.m; path = HLSegmentViewController/Classes/SegmentViewController/HLSegmentViewController.m; sourceTree = "<group>"; };
 		2FC8702CC9A30ADC5C136D382A178C4A /* Pods-HLSegmentViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLSegmentViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		30F462574E62AB3919E6ACDC4119A356 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		39A25AA9DBBE1264B0EA3FE5C319F607 /* Pods-HLSegmentViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLSegmentViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B0006B2A4DB57F3E02062823F33D99A /* HLSegmentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HLSegmentView.h; path = HLSegmentViewController/Classes/SegmentViewController/HLSegmentView.h; sourceTree = "<group>"; };
 		432C3F7DC1545AC5B9A0978AD08C0CE4 /* Pods-HLSegmentViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLSegmentViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4A6F4BAEFF76CA6B5463C625F28DD212 /* SegmentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SegmentViewController.h; path = HLSegmentViewController/Classes/SegmentViewController/SegmentViewController.h; sourceTree = "<group>"; };
 		55AAB846F39F1C56D511AF239AA0B4A7 /* Pods-HLSegmentViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HLSegmentViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		571B0C0F2409E16BF21478F2B14E1BC6 /* Pods-HLSegmentViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HLSegmentViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		59A8DFC575934D4F4A48216BD923D65A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B74CE74EC982E0BA644DEF0C7AACA66 /* HLSegmentViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HLSegmentViewController.modulemap; sourceTree = "<group>"; };
 		684AFE7948C6F0B7FF9E101F0CFE33E4 /* Pods-HLSegmentViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLSegmentViewController_Tests-resources.sh"; sourceTree = "<group>"; };
 		6D59F7255E065B10698E61D7D5BA739D /* Pods-HLSegmentViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HLSegmentViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		6ED20BF9A4134F8CFFBB891EB7CCF388 /* HLSegmentViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLSegmentViewController.xcconfig; sourceTree = "<group>"; };
 		76984358D128F6AF7A41C3F8A812A755 /* Pods_HLSegmentViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HLSegmentViewController_Example.framework; path = "Pods-HLSegmentViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB723D31EC2685D09F70E31785CA2E9 /* HLSegmentViewConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HLSegmentViewConfig.h; path = HLSegmentViewController/Classes/SegmentViewController/HLSegmentViewConfig.h; sourceTree = "<group>"; };
 		83450C115B4614FACE8568F2A73757C0 /* Pods-HLSegmentViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLSegmentViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		899066788A733D981B3A5659250E8203 /* SegmentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SegmentViewController.m; path = HLSegmentViewController/Classes/SegmentViewController/SegmentViewController.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96F6706E6A340FB451BC699AE47483D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9E892BA643A9AD0ADE103C60E17C20C5 /* HLSegmentViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLSegmentViewController-umbrella.h"; sourceTree = "<group>"; };
+		93BEBF7F56F51213DB1F13D99BF5839C /* HLSegmentViewConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HLSegmentViewConfig.m; path = HLSegmentViewController/Classes/SegmentViewController/HLSegmentViewConfig.m; sourceTree = "<group>"; };
+		A6E8577696F019A139F5C901ACEBD48F /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "HLSegmentViewController/Classes/SegmentViewController/UIView+Frame.m"; sourceTree = "<group>"; };
+		A7568888B17F3C00B449E177F0CC3C30 /* HLSegmentViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HLSegmentViewController-dummy.m"; sourceTree = "<group>"; };
 		A8EA2AC2C0041A150F87C88D4F4A4905 /* Pods-HLSegmentViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLSegmentViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AB26A66269A412998AC947F0C6D543A0 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "HLSegmentViewController/Classes/SegmentViewController/UIView+Frame.h"; sourceTree = "<group>"; };
+		AD5306B6138C41D7A91A0D2376A1F8F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF14766CDB33441000059F93F01A7F70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B97F2460C9474080E4175174FCE9030B /* HLSegmentViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLSegmentViewController-prefix.pch"; sourceTree = "<group>"; };
+		B4DEB0C0466BB5C1CE943B0513AE2DD2 /* HLSegmentViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HLSegmentViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B706A561950791FAE2D505F478F41926 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BB603FCB790A3583771EB410B4D5DFC5 /* Pods_HLSegmentViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HLSegmentViewController_Tests.framework; path = "Pods-HLSegmentViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE90ABE0D99DD6F920E8955CE8F5E7E /* HLSegmentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HLSegmentView.m; path = HLSegmentViewController/Classes/SegmentViewController/HLSegmentView.m; sourceTree = "<group>"; };
 		C0DEA4002FB0363D99B65093BEC6748E /* HLSegmentViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HLSegmentViewController.framework; path = HLSegmentViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BADA8B6CD7CBB6FD0DCF2EBFEA49E6 /* Pods-HLSegmentViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HLSegmentViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D01A12D4B6FF52661B72AAA26B959C38 /* Pods-HLSegmentViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLSegmentViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		DE4C3D89BE222D8246FDB9619852E52A /* HLSegmentViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLSegmentViewController.xcconfig; sourceTree = "<group>"; };
 		E1B08AF3B56C2CE9B1FC1DC4F1AE6B4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFCA93BB968BDE3BB273A5D66523A51 /* Pods-HLSegmentViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLSegmentViewController_Example-resources.sh"; sourceTree = "<group>"; };
 		EF59BB0170F5E360F46CB027D241CF4B /* Pods-HLSegmentViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HLSegmentViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		F0B9C38181F52BB9E4724B06FC5A28D5 /* Pods-HLSegmentViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HLSegmentViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F46A102417530BC7C95CCB9D676E211D /* HLSegmentViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLSegmentViewController-umbrella.h"; sourceTree = "<group>"; };
 		FA6F990C4B58B8603AE1067986EC2D35 /* Pods-HLSegmentViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLSegmentViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FDAAFDC8DB5101466F04537D8DEA07CF /* Pods-HLSegmentViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HLSegmentViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,11 +105,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		769F43091542AE30557C85AD85E59162 /* Frameworks */ = {
+		C4005B661D028FD83459811A12B28759 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FCE18A57624CC7A02FCBE46710202B /* Foundation.framework in Frameworks */,
+				62CE8B39F1ABD7628E71CF24F442D1E7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,34 +134,14 @@
 			path = "Target Support Files/Pods-HLSegmentViewController_Tests";
 			sourceTree = "<group>";
 		};
-		285573B557AAD050E18A8F01A57820F2 /* Pod */ = {
+		2BD3221620D7711059B47CB7649F4B77 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				261FBB86D10827E2724220CEEF5934B2 /* HLSegmentViewController.podspec */,
-				96F6706E6A340FB451BC699AE47483D6 /* LICENSE */,
-				2A390B2BC9FD241D55928A1522A7629F /* README.md */,
+				B4DEB0C0466BB5C1CE943B0513AE2DD2 /* HLSegmentViewController.podspec */,
+				30F462574E62AB3919E6ACDC4119A356 /* LICENSE */,
+				B706A561950791FAE2D505F478F41926 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		397858D3DB44019E1C81E18012B346F8 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41C15CC1F89EE00988571B109EED815D /* HLSegmentViewController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		41C15CC1F89EE00988571B109EED815D /* HLSegmentViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4A6F4BAEFF76CA6B5463C625F28DD212 /* SegmentViewController.h */,
-				899066788A733D981B3A5659250E8203 /* SegmentViewController.m */,
-				285573B557AAD050E18A8F01A57820F2 /* Pod */,
-				62005E600D8684C84E7CC1077F16FD81 /* Support Files */,
-			);
-			name = HLSegmentViewController;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -160,25 +152,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		62005E600D8684C84E7CC1077F16FD81 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B74CE74EC982E0BA644DEF0C7AACA66 /* HLSegmentViewController.modulemap */,
-				DE4C3D89BE222D8246FDB9619852E52A /* HLSegmentViewController.xcconfig */,
-				055CD56F943B8CD85B79C1C73DA44762 /* HLSegmentViewController-dummy.m */,
-				B97F2460C9474080E4175174FCE9030B /* HLSegmentViewController-prefix.pch */,
-				9E892BA643A9AD0ADE103C60E17C20C5 /* HLSegmentViewController-umbrella.h */,
-				59A8DFC575934D4F4A48216BD923D65A /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HLSegmentViewController";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				397858D3DB44019E1C81E18012B346F8 /* Development Pods */,
+				9AF225ED4E74A6F148A3BEC41814507F /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				8A607A3B07E6D813D1DB198684339957 /* Products */,
 				DCBED13437FD71AD5C1F71EA93DF833A /* Targets Support Files */,
@@ -195,12 +173,52 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		916F61FA1EECAFAD4C21958D6F35D5ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A1EAF81B9E8901A7DBDB70A6A772124 /* HLSegmentViewController.modulemap */,
+				6ED20BF9A4134F8CFFBB891EB7CCF388 /* HLSegmentViewController.xcconfig */,
+				A7568888B17F3C00B449E177F0CC3C30 /* HLSegmentViewController-dummy.m */,
+				128C129794EBA078576F14D09BA431C4 /* HLSegmentViewController-prefix.pch */,
+				F46A102417530BC7C95CCB9D676E211D /* HLSegmentViewController-umbrella.h */,
+				AD5306B6138C41D7A91A0D2376A1F8F5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HLSegmentViewController";
+			sourceTree = "<group>";
+		};
+		9AF225ED4E74A6F148A3BEC41814507F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6002599FBFD377D41794D695E04F6CF /* HLSegmentViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6002599FBFD377D41794D695E04F6CF /* HLSegmentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B0006B2A4DB57F3E02062823F33D99A /* HLSegmentView.h */,
+				BCE90ABE0D99DD6F920E8955CE8F5E7E /* HLSegmentView.m */,
+				7CB723D31EC2685D09F70E31785CA2E9 /* HLSegmentViewConfig.h */,
+				93BEBF7F56F51213DB1F13D99BF5839C /* HLSegmentViewConfig.m */,
+				2339BE754811A0BF3AC24C37F2555DC1 /* HLSegmentViewController.h */,
+				25337A86AD641FED9BAA892DF49FBE20 /* HLSegmentViewController.m */,
+				AB26A66269A412998AC947F0C6D543A0 /* UIView+Frame.h */,
+				A6E8577696F019A139F5C901ACEBD48F /* UIView+Frame.m */,
+				2BD3221620D7711059B47CB7649F4B77 /* Pod */,
+				916F61FA1EECAFAD4C21958D6F35D5ED /* Support Files */,
+			);
+			name = HLSegmentViewController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		DCBED13437FD71AD5C1F71EA93DF833A /* Targets Support Files */ = {
@@ -233,15 +251,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		332A6ABCB6FC92E31AD0F2D49050C965 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FD89037D027A88C1DCD51F21AC32B48 /* HLSegmentViewController-umbrella.h in Headers */,
-				991D8B654AAEA5F923A09B4BD15E422E /* SegmentViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		77526B9FBDC7AD7AE70851BB2106951A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +264,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A885063E9DFFE89C25438A337596C342 /* Pods-HLSegmentViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99E3B3AC5D1364143D88F5CABCA77E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F3054B3A1F0CB35F6C6D408DFED26A /* HLSegmentView.h in Headers */,
+				738FCB31C3E271B32A4C210EE20ADF5F /* HLSegmentViewConfig.h in Headers */,
+				561F41FE65564043BEB57B405E8F1C2F /* HLSegmentViewController-umbrella.h in Headers */,
+				605DE21FCD49CD7C27238DDF5B19EC91 /* HLSegmentViewController.h in Headers */,
+				E6BD15E11DC7F5FC43533E2D5E740E33 /* UIView+Frame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,24 +301,6 @@
 			productReference = 76984358D128F6AF7A41C3F8A812A755 /* Pods_HLSegmentViewController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9C283702F41AB7341CC256572FFBF0A8 /* HLSegmentViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AC1A5988FD331B73C73BC40AD434652 /* Build configuration list for PBXNativeTarget "HLSegmentViewController" */;
-			buildPhases = (
-				332A6ABCB6FC92E31AD0F2D49050C965 /* Headers */,
-				8E3A1075A8FF8498FB088E5FBCFA67BB /* Sources */,
-				769F43091542AE30557C85AD85E59162 /* Frameworks */,
-				C0FABACB5E90FEA681CFD5AA38CD1873 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HLSegmentViewController;
-			productName = HLSegmentViewController;
-			productReference = C0DEA4002FB0363D99B65093BEC6748E /* HLSegmentViewController.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D5721920953A1FB6AA1F0A776E96E389 /* Pods-HLSegmentViewController_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 031846CE233B04DEA65A81EF38B80999 /* Build configuration list for PBXNativeTarget "Pods-HLSegmentViewController_Tests" */;
@@ -315,6 +318,24 @@
 			name = "Pods-HLSegmentViewController_Tests";
 			productName = "Pods-HLSegmentViewController_Tests";
 			productReference = BB603FCB790A3583771EB410B4D5DFC5 /* Pods_HLSegmentViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5062FAC5EAD78E0C0591256AE1CFA5F /* HLSegmentViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59781E762E7B3102721DD4433B602EF /* Build configuration list for PBXNativeTarget "HLSegmentViewController" */;
+			buildPhases = (
+				E99E3B3AC5D1364143D88F5CABCA77E7 /* Headers */,
+				42FA72017233D3D1FF8ABBFFF8E5A1D2 /* Sources */,
+				C4005B661D028FD83459811A12B28759 /* Frameworks */,
+				466963EDB182916EE30794296DB43079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLSegmentViewController;
+			productName = HLSegmentViewController;
+			productReference = C0DEA4002FB0363D99B65093BEC6748E /* HLSegmentViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -338,7 +359,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C283702F41AB7341CC256572FFBF0A8 /* HLSegmentViewController */,
+				F5062FAC5EAD78E0C0591256AE1CFA5F /* HLSegmentViewController */,
 				4120D750364AB1DA4253047211424D4E /* Pods-HLSegmentViewController_Example */,
 				D5721920953A1FB6AA1F0A776E96E389 /* Pods-HLSegmentViewController_Tests */,
 			);
@@ -346,14 +367,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		707961B793134E854BC18F9201A0F6A7 /* Resources */ = {
+		466963EDB182916EE30794296DB43079 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0FABACB5E90FEA681CFD5AA38CD1873 /* Resources */ = {
+		707961B793134E854BC18F9201A0F6A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,20 +391,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		42FA72017233D3D1FF8ABBFFF8E5A1D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D05C105652BE5FB24FC7C597D7CB572 /* HLSegmentView.m in Sources */,
+				4FD8AF4EE8AA466C467AE3CC8FE2C747 /* HLSegmentViewConfig.m in Sources */,
+				7370A721C505691317C1B319F8282427 /* HLSegmentViewController-dummy.m in Sources */,
+				C35ACFD64A42471984A60A4DDB0989A0 /* HLSegmentViewController.m in Sources */,
+				F39F022187232E6D5D62B66FD160C1B1 /* UIView+Frame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		670D083A73799C50377B1C0A25C772C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB16E12C21AC3D908CC290FF73F739C0 /* Pods-HLSegmentViewController_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E3A1075A8FF8498FB088E5FBCFA67BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEA69FED24D43E0B1C4C539A8721BBB8 /* HLSegmentViewController-dummy.m in Sources */,
-				541F53FBA001702E8C6D6DBCFF74B0A7 /* SegmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +431,7 @@
 		2E4A64A1D09F1054244BDE4DDDA037AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HLSegmentViewController;
-			target = 9C283702F41AB7341CC256572FFBF0A8 /* HLSegmentViewController */;
+			target = F5062FAC5EAD78E0C0591256AE1CFA5F /* HLSegmentViewController */;
 			targetProxy = 4B1EE73A7121CA83D9653522C2359D57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,6 +504,37 @@
 			};
 			name = Debug;
 		};
+		47C1CE06EC0A87DA351A886179D7ECFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED20BF9A4134F8CFFBB891EB7CCF388 /* HLSegmentViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HLSegmentViewController/HLSegmentViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HLSegmentViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HLSegmentViewController/HLSegmentViewController.modulemap";
+				PRODUCT_MODULE_NAME = HLSegmentViewController;
+				PRODUCT_NAME = HLSegmentViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -539,67 +594,6 @@
 			};
 			name = Release;
 		};
-		851667E5320DC67E148802AB149EF33A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE4C3D89BE222D8246FDB9619852E52A /* HLSegmentViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HLSegmentViewController/HLSegmentViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HLSegmentViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HLSegmentViewController/HLSegmentViewController.modulemap";
-				PRODUCT_MODULE_NAME = HLSegmentViewController;
-				PRODUCT_NAME = HLSegmentViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8C778D2213CB84EC82615E36471C00F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE4C3D89BE222D8246FDB9619852E52A /* HLSegmentViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HLSegmentViewController/HLSegmentViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HLSegmentViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HLSegmentViewController/HLSegmentViewController.modulemap";
-				PRODUCT_MODULE_NAME = HLSegmentViewController;
-				PRODUCT_NAME = HLSegmentViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9177F8D79B3D28511B9F4736D36C0732 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83450C115B4614FACE8568F2A73757C0 /* Pods-HLSegmentViewController_Example.debug.xcconfig */;
@@ -627,6 +621,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91BC475388FDFDBE170D5B752112C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED20BF9A4134F8CFFBB891EB7CCF388 /* HLSegmentViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HLSegmentViewController/HLSegmentViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HLSegmentViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HLSegmentViewController/HLSegmentViewController.modulemap";
+				PRODUCT_MODULE_NAME = HLSegmentViewController;
+				PRODUCT_NAME = HLSegmentViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -743,15 +767,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AC1A5988FD331B73C73BC40AD434652 /* Build configuration list for PBXNativeTarget "HLSegmentViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C778D2213CB84EC82615E36471C00F3 /* Debug */,
-				851667E5320DC67E148802AB149EF33A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -766,6 +781,15 @@
 			buildConfigurations = (
 				9177F8D79B3D28511B9F4736D36C0732 /* Debug */,
 				EB7C4B6211329854457938BD40AAA9C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B59781E762E7B3102721DD4433B602EF /* Build configuration list for PBXNativeTarget "HLSegmentViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BC475388FDFDBE170D5B752112C2CE /* Debug */,
+				47C1CE06EC0A87DA351A886179D7ECFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

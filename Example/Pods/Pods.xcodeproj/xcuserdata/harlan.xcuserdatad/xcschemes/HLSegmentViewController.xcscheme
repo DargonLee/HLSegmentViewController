@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C283702F41AB7341CC256572FFBF0A8"
+               BlueprintIdentifier = "F5062FAC5EAD78E0C0591256AE1CFA5F"
                BlueprintName = "HLSegmentViewController"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "HLSegmentViewController.framework">

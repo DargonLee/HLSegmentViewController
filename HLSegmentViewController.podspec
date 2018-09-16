@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLSegmentViewController'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = '简单易用的SegmentViewController，可以快速实现网易新闻，今日头像类似的主页效果'
 
 # This description is used to generate tags and improve search results.

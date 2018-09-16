@@ -10,7 +10,10 @@
 #endif
 #endif
 
-#import "SegmentViewController.h"
+#import "HLSegmentView.h"
+#import "HLSegmentViewConfig.h"
+#import "HLSegmentViewController.h"
+#import "UIView+Frame.h"
 
 FOUNDATION_EXPORT double HLSegmentViewControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char HLSegmentViewControllerVersionString[];

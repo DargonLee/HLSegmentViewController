@@ -30,6 +30,33 @@ it, simply add the following line to your Podfile:
 pod 'HLSegmentViewController'
 ```
 
+## 项目中使用
+
+```
+//创建实例对象
+HLSegmentViewController *segmentVC = [[HLSegmentViewController alloc]init];
+segmentVC = [UIColor lightGrayColor];
+[self addChildViewController:segmentVC];
+
+segmentVC.view.frame = self.view.bounds;
+[self.view addSubview:segmentVC.view];
+
+
+//创建需要添加的子控制器
+NSArray *items = @[@"专辑", @"声音", @"下载中"];
+
+TopLineViewController *vc1 = [[TopLineViewController alloc]init];
+
+HotViewController *vc2 = [[HotViewController alloc]init];
+
+VideoViewController *vc3 = [[VideoViewController alloc]init];
+
+
+//调用实例方法进行创建
+[segmentVC setupSegmentItems:items childViewControllers:@[vc1,vc2,vc3]];
+
+```
+
 ## Author
 
 2461414445@qq.com
