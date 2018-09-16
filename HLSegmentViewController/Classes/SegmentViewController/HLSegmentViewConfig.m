@@ -18,7 +18,14 @@
 + (instancetype)defaultConfig
 {
     HLSegmentViewConfig *config = [[HLSegmentViewConfig alloc]init];
+    config.segmentBarColor = [UIColor clearColor];
+    config.font = [UIFont systemFontOfSize:15];
+    config.normalColor = [UIColor lightGrayColor];
+    config.selectColor = [UIColor redColor];
     
+    config.indicColor = [UIColor redColor];
+    config.indicHeight = 2;
+    config.indicExtraWidth = 10;
     return config;
 }
 
