@@ -15,6 +15,7 @@ clone 项目 然后运行`pod install` 来看实例效果
 - 使用简单
 - 方便易用 
 - 对项目无浸入性
+- 支持链式编程
 
 
 ![Platform](./demo.gif)
@@ -54,6 +55,15 @@ VideoViewController *vc3 = [[VideoViewController alloc]init];
 
 //调用实例方法进行创建
 [segmentVC setupSegmentItems:items childViewControllers:@[vc1,vc2,vc3]];
+
+
+//设置属性
+[segmentVC.segmentView updateWithConfit:^(HLSegmentViewConfig *config) {
+    //普通属性设置
+    config.segmentBarColor = [UIColor greenColor];
+    //链式编程设置
+    config.segmentViewBgColor([UIColor grayColor]).itemFont([UIFont systemFontOfSize:14]);
+}];
 
 ```
 

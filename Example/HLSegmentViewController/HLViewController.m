@@ -89,7 +89,9 @@
         [self.segmentVC setupSegmentItems:items childViewControllers:@[vc1, vc2, vc3, vc4, vc5,vc6]];
         
         [self.segmentVC.segmentView updateWithConfit:^(HLSegmentViewConfig *config) {
-            config.segmentBarColor = [UIColor greenColor];
+            config.segmentBarColor = [UIColor greenColor];//普通属性设置
+            //链式编程设置
+            config.segmentViewBgColor([UIColor grayColor]).itemFont([UIFont systemFontOfSize:14]);
         }];
     });
     

@@ -25,7 +25,7 @@
     
     config.indicColor = [UIColor redColor];
     config.indicHeight = 2;
-    config.indicExtraWidth = 10;
+    config.indicExtraWidth = 0;
     return config;
 }
 

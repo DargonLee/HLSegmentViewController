@@ -15,13 +15,7 @@
 
 @property (nonatomic,weak) UIScrollView *contentScrollView;
 
-@property (nonatomic,strong) NSMutableArray <UIButton *>*itemButtons;
-
-@property (nonatomic, weak) UIView *indicatorView;
-
 @property (nonatomic,strong) UIButton *selectedButton;
-
-@property (nonatomic,strong) HLSegmentViewConfig *config;
 
 @end
 
@@ -99,21 +93,61 @@
     [self layoutIfNeeded];
 }
 
+
+- (void)updateIndicatorViewWithScrollView:(UIScrollView *)scrollView
+{
+    // 当前偏移量
+    CGFloat currentOffSetX = scrollView.contentOffset.x;
+    // 偏移进度
+    CGFloat offsetProgress = currentOffSetX / scrollView.width;
+    CGFloat progress = offsetProgress - floor(offsetProgress);
+    
+    NSInteger fromIndex = currentOffSetX/scrollView.width;
+    NSInteger toIndex = fromIndex + 1;
+    if (toIndex >= self.itemButtons.count) {
+        toIndex = fromIndex;
+    }
+    
+    UIButton *fromBtn = self.itemButtons[fromIndex];
+    NSInteger count = self.itemButtons.count;
+    UIButton *toBtn;
+    if (toIndex < count) {
+        toBtn = self.itemButtons[toIndex];
+    }
+    CGFloat scaleR = progress;
+    CGFloat scaleL = 1 - scaleR;
+    
+//    fromBtn.transform = CGAffineTransformMakeScale(scaleL * 0.2 + 1, scaleL * 0.2 + 1);
+//    toBtn.transform = CGAffineTransformMakeScale(scaleR * 0.2 + 1, scaleR * 0.2 + 1);
+
+    if(currentOffSetX - (scrollView.width * _selectIndex) < 0){
+        self.indicatorView.x = scaleL*(fromBtn.left-toBtn.left) + toBtn.left;
+    }else{
+        self.indicatorView.x = scaleR*(toBtn.left-fromBtn.left) + fromBtn.left;
+    }
+
+    UIColor *rightColor = [UIColor colorWithRed:scaleR green:0 blue:0 alpha:1];
+    UIColor *leftColor = [UIColor colorWithRed:scaleL green:0 blue:0 alpha:1];
+    [toBtn setTitleColor:rightColor forState:UIControlStateNormal];
+    [fromBtn setTitleColor:leftColor forState:UIControlStateNormal];
+
+}
 - (void)setItems:(NSArray<NSString *> *)items
 {
     _items = items;
     [self.itemButtons makeObjectsPerformSelector:@selector(removeFromSuperview)];
     self.itemButtons = nil;
+    NSInteger index = 0;
     for (NSString *item in items) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.tag = self.itemButtons.count;
+        btn.tag = index;
         [btn setTitle:item forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
         [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
-        btn.backgroundColor = [self randomColor];
         [self.contentScrollView addSubview:btn];
         [self.itemButtons addObject:btn];
+        index ++;
     }
     
     [self setNeedsLayout];
@@ -127,9 +161,9 @@
         return;
     }
     _selectIndex = selectIndex;
-    
     UIButton *btn = self.itemButtons[selectIndex];
     [self btnClick:btn];
+    
 }
 
 - (void)btnClick:(UIButton *)button
@@ -137,14 +171,15 @@
     if([self.delegate respondsToSelector:@selector(segmentView:didSelectIndex:fromIndex:)]){
         [self.delegate segmentView:self didSelectIndex:button.tag fromIndex:self.selectedButton.tag];
     }
+    
     _selectIndex = button.tag;
     self.selectedButton.selected = NO;
     button.selected = YES;
     self.selectedButton = button;
-    [UIView animateWithDuration:0.25 animations:^{
-        self.indicatorView.width = button.width + self.config.indicExtraWidth * 2;
-        self.indicatorView.centerX = button.centerX;
-    }];
+    
+    self.indicatorView.width = button.width + self.config.indicExtraWidth * 2;
+    self.indicatorView.centerX = button.centerX;
+    
     CGFloat offsetX = button.center.x - self.contentScrollView.width * 0.5;
     if (offsetX < 0) {
         offsetX = 0;
@@ -154,7 +189,10 @@
         offsetX = maxOffsetX;
     }
     [self.contentScrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
+    
 }
+
+
 
 - (void)layoutSubviews
 {
@@ -182,21 +220,10 @@
     
     self.contentScrollView.contentSize = CGSizeMake(lastX, 0);
     UIButton *btn = self.itemButtons[self.selectIndex];
-    self.indicatorView.width = btn.width;
+    self.indicatorView.width = btn.width + self.config.indicExtraWidth * 2;
     self.indicatorView.centerX = btn.centerX;
     self.indicatorView.y = self.height - self.indicatorView.height;
     
-}
-
-- (UIColor *)randomColor
-{
-    CGFloat hue = ( arc4random() % 256 / 256.0 ); //0.0 to 1.0
-    
-    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5; // 0.5 to 1.0,away from white
-    
-    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5; //0.5 to 1.0,away from black
-    
-    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
 }
 
 @end

@@ -40,6 +40,7 @@
         contentScrollView.delegate = self;
         contentScrollView.pagingEnabled = YES;
         contentScrollView.showsHorizontalScrollIndicator = NO;
+        contentScrollView.bounces = NO;
         [self.view addSubview:contentScrollView];
         self.contentScrollView = contentScrollView;
     }
@@ -97,7 +98,6 @@
 #pragma HLSegmentViewDelegate
 - (void)segmentView:(HLSegmentView *)segmentView didSelectIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex
 {
-    NSLog(@"%ld----%ld", (long)fromIndex, (long)toIndex);
     [self showChildVCViewsAtIndex:toIndex];
 }
 
@@ -110,9 +110,31 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
+    [self.segmentView updateIndicatorViewWithScrollView:scrollView];
 }
 
+/*
+ NSInteger leftIndex = scrollView.contentOffset.x/kScreenW;
+ NSInteger rightIndex = leftIndex + 1;
+ UIButton *leftBtn = self.segmentView.itemButtons[leftIndex];
+ NSInteger count = self.segmentView.itemButtons.count;
+ UIButton *rightBtn;
+ if (rightIndex < count) {
+ rightBtn = self.segmentView.itemButtons[rightIndex];
+ }
+ CGFloat scaleR = scrollView.contentOffset.x/kScreenW;
+ scaleR -= leftIndex;
+ 
+ CGFloat scaleL = 1 - scaleR;
+ leftBtn.transform = CGAffineTransformMakeScale(scaleL * 0.2 + 1, scaleL * 0.2 + 1);
+ rightBtn.transform = CGAffineTransformMakeScale(scaleR * 0.2 + 1, scaleR * 0.2 + 1);
+ 
+ self.segmentView.indicatorView.transform = CGAffineTransformMakeTranslation(scaleR*(rightBtn.left-leftBtn.left), 0);
+ UIColor *rightColor = [UIColor colorWithRed:scaleR green:0 blue:0 alpha:1];
+ UIColor *leftColor = [UIColor colorWithRed:scaleL green:0 blue:0 alpha:1];
+ [rightBtn setTitleColor:rightColor forState:UIControlStateNormal];
+ [leftBtn setTitleColor:leftColor forState:UIControlStateNormal];
+ */
 /*
  // 字体缩放 1.缩放比例 2.缩放哪两个按钮
  NSInteger leftIndex = scrollView.contentOffset.x/kScreenW;
