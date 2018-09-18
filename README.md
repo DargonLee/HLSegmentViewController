@@ -42,6 +42,10 @@ segmentVC = [UIColor lightGrayColor];
 segmentVC.view.frame = self.view.bounds;
 [self.view addSubview:segmentVC.view];
 
+segmentBarVC.segmentBar.frame = CGRectMake(0, 0, 300, 35);
+segmentBarVC.segmentBar.backgroundColor = [UIColor greenColor];
+self.navigationItem.titleView = self.segmentBarVC.segmentBar;
+
 
 //创建需要添加的子控制器
 NSArray *items = @[@"专辑", @"声音", @"下载中"];
