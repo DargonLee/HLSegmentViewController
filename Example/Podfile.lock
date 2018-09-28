@@ -1,5 +1,5 @@
 PODS:
-  - HLSegmentViewController (1.1.0)
+  - HLSegmentViewController (1.2.0)
 
 DEPENDENCIES:
   - HLSegmentViewController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HLSegmentViewController: 46b11354e8b1935eb0b4e8614fd80bc55a510c6b
+  HLSegmentViewController: 576278fb51c69111583abd7131f655fb6d1faa15
 
 PODFILE CHECKSUM: 9bbde5f9ad45ed3b36053577c7747c3463495ceb
 

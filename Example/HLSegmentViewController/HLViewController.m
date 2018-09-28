@@ -90,6 +90,8 @@
         
         [self.segmentVC.segmentView updateWithConfit:^(HLSegmentViewConfig *config) {
             config.segmentBarColor = [UIColor greenColor];//普通属性设置
+//            config.indicFixedWidth = 40.f;
+//            config.indicatorFixedWidth(40);
             //链式编程设置
             config.segmentViewBgColor([UIColor grayColor]).itemFont([UIFont systemFontOfSize:14]);
         }];

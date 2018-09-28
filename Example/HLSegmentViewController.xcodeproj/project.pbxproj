@@ -30,6 +30,7 @@
 		DCAF0581214BC903002B197B /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAF057A214BC903002B197B /* HotViewController.m */; };
 		DCAF0582214BC903002B197B /* ScoietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAF057C214BC903002B197B /* ScoietyViewController.m */; };
 		DCAF058B214BCDD7002B197B /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCAF058A214BCDD7002B197B /* demo.gif */; };
+		DCCA7876215DE12E0016B1A6 /* demo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCCA7875215DE12E0016B1A6 /* demo2.gif */; };
 		FE57F4390485286263990AB6 /* Pods_HLSegmentViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6786CEFAE9B81506FE05F21D /* Pods_HLSegmentViewController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		DCAF057B214BC903002B197B /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
 		DCAF057C214BC903002B197B /* ScoietyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoietyViewController.m; sourceTree = "<group>"; };
 		DCAF058A214BCDD7002B197B /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		DCCA7875215DE12E0016B1A6 /* demo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo2.gif; path = ../../demo2.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				6003F5A5195388D20070C39A /* HLViewController.h */,
 				6003F5A6195388D20070C39A /* HLViewController.m */,
 				DCAF058A214BCDD7002B197B /* demo.gif */,
+				DCCA7875215DE12E0016B1A6 /* demo2.gif */,
 				DCAF0570214BC903002B197B /* ChildVC */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -321,6 +324,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				DCAF058B214BCDD7002B197B /* demo.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				DCCA7876215DE12E0016B1A6 /* demo2.gif in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

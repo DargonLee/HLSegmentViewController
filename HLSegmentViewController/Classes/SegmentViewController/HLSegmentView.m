@@ -88,6 +88,7 @@
     }
     self.backgroundColor = self.config.segmentBarColor;
     self.indicatorView.backgroundColor = self.config.indicColor;
+    self.indicatorView.width = self.config.indicFixedWidth;
     
     [self setNeedsLayout];
     [self layoutIfNeeded];
@@ -121,9 +122,19 @@
 //    toBtn.transform = CGAffineTransformMakeScale(scaleR * 0.2 + 1, scaleR * 0.2 + 1);
 
     if(currentOffSetX - (scrollView.width * _selectIndex) < 0){
-        self.indicatorView.x = scaleL*(fromBtn.left-toBtn.left) + toBtn.left;
+        if (self.config.indicatorFixedWidth ==0) {
+            self.indicatorView.x = scaleL*(fromBtn.left-toBtn.left) + toBtn.left;
+        }else{
+            self.indicatorView.x = scaleL*(fromBtn.centerX-toBtn.centerX) + toBtn.centerX;
+        }
+        
     }else{
-        self.indicatorView.x = scaleR*(toBtn.left-fromBtn.left) + fromBtn.left;
+        if (self.config.indicatorFixedWidth ==0) {
+            self.indicatorView.x = scaleR*(toBtn.left-fromBtn.left) + fromBtn.left;
+        }else{
+            self.indicatorView.x = scaleR*(toBtn.centerX-fromBtn.centerX) + fromBtn.centerX;
+        }
+        
     }
 
     UIColor *rightColor = [UIColor colorWithRed:scaleR green:0 blue:0 alpha:1];
@@ -177,7 +188,12 @@
     button.selected = YES;
     self.selectedButton = button;
     
-    self.indicatorView.width = button.width + self.config.indicExtraWidth * 2;
+    if (self.config.indicFixedWidth != 0) {
+        self.indicatorView.width = self.config.indicFixedWidth;
+    }else{
+        self.indicatorView.width = button.width + self.config.indicExtraWidth * 2;
+    }
+    
     self.indicatorView.centerX = button.centerX;
     
     CGFloat offsetX = button.center.x - self.contentScrollView.width * 0.5;
@@ -220,7 +236,11 @@
     
     self.contentScrollView.contentSize = CGSizeMake(lastX, 0);
     UIButton *btn = self.itemButtons[self.selectIndex];
-    self.indicatorView.width = btn.width + self.config.indicExtraWidth * 2;
+    if (self.config.indicFixedWidth != 0) {
+        self.indicatorView.width = self.config.indicFixedWidth;
+    }else{
+        self.indicatorView.width = btn.width + self.config.indicExtraWidth * 2;
+    }
     self.indicatorView.centerX = btn.centerX;
     self.indicatorView.y = self.height - self.indicatorView.height;
     

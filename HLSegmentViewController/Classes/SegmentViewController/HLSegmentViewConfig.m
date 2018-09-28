@@ -26,6 +26,7 @@
     config.indicColor = [UIColor redColor];
     config.indicHeight = 2;
     config.indicExtraWidth = 0;
+    config.indicFixedWidth = 0;
     return config;
 }
 
@@ -81,6 +82,14 @@
 {
     return ^(CGFloat width){
         self.indicExtraWidth = width;
+        return self;
+    };
+}
+
+- (HLSegmentViewConfig *(^)(CGFloat))indicatorFixedWidth
+{
+    return ^(CGFloat width){
+        self.indicFixedWidth = width;
         return self;
     };
 }

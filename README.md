@@ -17,9 +17,11 @@ clone 项目 然后运行`pod install` 来看实例效果
 - 对项目无浸入性
 - 支持链式编程
 
-
+- 动态宽度
 ![Platform](./demo.gif)
 
+- 固定宽度
+![Platform](./demo2.gif)
 ## Requirements
 
 ## Installation

@@ -20,6 +20,7 @@
 @property (nonatomic, strong) UIColor *indicColor;
 @property (nonatomic, assign) CGFloat indicHeight;
 @property (nonatomic, assign) CGFloat indicExtraWidth;
+@property (nonatomic, assign) CGFloat indicFixedWidth;
 
 
 /**
@@ -56,6 +57,11 @@
  HLSegmentView 指示器扩展宽度（在自适应的宽度基础上增加）
  */
 @property (nonatomic,copy) HLSegmentViewConfig *(^indicatorExtraWidth)(CGFloat width);
+
+/**
+ HLSegmentView 指示器固定宽度（就不会随着字体长度去进行适应 扩展宽度就会失效）
+ */
+@property (nonatomic,copy) HLSegmentViewConfig *(^indicatorFixedWidth)(CGFloat width);
 
 
 @end
